@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+        .btn {
+            width: 7%;
+            padding: 1%;
+            background-color: rgb(4, 4, 59);
+            color: white;
+            border: 5px outset white;
+            margin-left:10% ;
+            margin-top: 3%;
+         }
+         .btn:hover {
+            cursor: grab;
+            background-color: rgb(21, 21, 89);
+            border: 2px inset white;
+            border-width: 5px;
+         }
+         /* .box {
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+         } */
+    </style>
+</head>
+<body>
+    
+    <!-- <img src="./img/filament-2027372__340.webp" id="img"/> -->
+    <img src="../OnOffSwitch/Img/filament-2027372__340.webp" id="img"/>
+    
+
+    <!-- <div class="box" id="img">  </div> -->
+    <button class="btn" onclick="on()">Switch On</button>
+    <button class="btn" onclick="off()">Switch Off</button>
+</body>
+</html>
+<script>
+   
+    function on() {
+        
+        document.getElementById('img').src="../OnOffSwitch/Img/light-161751__340.webp"
+        // document.getElementById('img').src="./img/light-161751__340.webp"
+    }
+    function off() {
+        
+        document.getElementById('img').src="../OnOffSwitch/Img/filament-2027372__340.webp"
+    }
+
+   
+
+</script>
